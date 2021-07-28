@@ -15,6 +15,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Tic Tac Toe")
+                .font(.title)
+                .bold()
             LazyVGrid(columns: Array(repeating: GridItem(.fixed(120), spacing: 15),count: 3), spacing: 15, content: {
                 ForEach(0..<9) { index in
                     ZStack {
